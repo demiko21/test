@@ -21,24 +21,40 @@ The second call returns "John Doe" because the method is called directly on the 
 So when console.log(x) runs, it's referring to the local x, which exists but is still undefined at that point.
 The value 20 is assigned after the console.log.
 That’s why the output is undefined.
-6)function uniqueChars(str) {
-  let result = "";
+6)function uniqueCharacters(str) {
+  let uniqueStr = "";
+
   for (let i = 0; i < str.length; i++) {
-    if (result.indexOf(str[i]) === -1) {
-      result += str[i];
+    if (uniqueStr.indexOf(str[i]) === -1) {
+      uniqueStr += str[i];
     }
   }
-  return result;
+  return uniqueStr;
 }
-7)function uniqueChars(str) {
-  let result = "";
-  for (let i = 0; i < str.length; i++) {
-    if (result.indexOf(str[i]) === -1) {
-      result += str[i];
+let inputString = "programming";
+let result = uniqueCharacters(inputString);
+console.log("Unique Characters: " + result);
+
+7)function amountToCoins(amount, coins) {
+  let result = [];
+
+  for (let i = 0; i < coins.length; i++) {
+    while (amount >= coins[i]) {
+      amount -= coins[i];
+      result.push(coins[i]);
     }
   }
+
   return result;
 }
+let amount = 46;
+let coins = [25, 10, 5, 2, 1];
+
+let output = amountToCoins(amount, coins);
+
+console.log("Coins used: " + output.join(", "));
+console.log("Total coins used: " + output.length);
+
 1. Difference between Cookie-based and JWT Token-based Authentication :session data on the server and uses a browser cookie (usually with a session ID) to identify users. The server must keep track of all sessions.all user info in a self-contained token (JSON Web Token) on the client side. The token is sent with each request and verified by the server without storing session data.
 2. Difference between Prototypal and Classical Inheritance :	Prototypal Inheritance: Objects inherit directly from other objects. It’s flexible and dynamic, used commonly in JavaScript (Object.create()).and instances. Objects are instances of classes, and inheritance is defined at class level (used in languages like Java, C++).
 1. Describe Closure in JavaScript :
