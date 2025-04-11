@@ -39,11 +39,11 @@ That’s why the output is undefined.
   }
   return result;
 }
-1. Difference between Cookie-based and JWT Token-based Authentication (2 marks):session data on the server and uses a browser cookie (usually with a session ID) to identify users. The server must keep track of all sessions.all user info in a self-contained token (JSON Web Token) on the client side. The token is sent with each request and verified by the server without storing session data.
-2. Difference between Prototypal and Classical Inheritance (2 marks):	Prototypal Inheritance: Objects inherit directly from other objects. It’s flexible and dynamic, used commonly in JavaScript (Object.create()).and instances. Objects are instances of classes, and inheritance is defined at class level (used in languages like Java, C++).
-1. Describe Closure in JavaScript (2 marks):
+1. Difference between Cookie-based and JWT Token-based Authentication :session data on the server and uses a browser cookie (usually with a session ID) to identify users. The server must keep track of all sessions.all user info in a self-contained token (JSON Web Token) on the client side. The token is sent with each request and verified by the server without storing session data.
+2. Difference between Prototypal and Classical Inheritance :	Prototypal Inheritance: Objects inherit directly from other objects. It’s flexible and dynamic, used commonly in JavaScript (Object.create()).and instances. Objects are instances of classes, and inheritance is defined at class level (used in languages like Java, C++).
+1. Describe Closure in JavaScript :
 A closure is when a function “remembers” and has access to variables from its outer scope, even after the outer function has finished executing.
-2.What is an HttpOnly Cookie? (2 marks):
+2.What is an HttpOnly Cookie? :
 An HttpOnly cookie is a type of cookie that cannot be accessed via JavaScript (e.g., document.cookie). It can only be sent in HTTP requests.
 This improves security by helping to prevent cross-site scripting (XSS) attacks.
 
